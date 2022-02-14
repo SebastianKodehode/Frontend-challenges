@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+
+body {
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 
+}
+
+.frame {
+    margin: 5rem auto;
+    width: 25rem;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 1.25rem;
+}
+
+header img {
+   width: 100%;
+   border-top-left-radius: 1.25rem;
+   border-top-right-radius: 1.25rem;
+   
+}
+
+.summary {
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+p {
+    color: blue: hsl(224, 23%, 55%);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.grid-container {
+    width: 18rem;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    border: solid darkgray 0.1rem;
+    border-radius: 1.25rem; 
+    background-color: hsl(225, 100%, 94%);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.5fr;
+    grid-auto-rows: minmax(5rem, auto);
+    grid-column-gap: 0.5rem;
+    row-gap: 0.5rem;
+    grid-template-rows: auto;
+  }
+
+.grid-left {
+    grid-area: 1;
+    grid-column-start: 1;
+    grid-template-columns: 2rem;
+    place-items: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.nested {
+    display: grid;
+    grid-area: 1;
+    grid-column-start: 2;
+    align-self: center;
+    justify-self: left;
+    
+}
+
+.grid-right {
+    grid-area: 1;
+    grid-column-start: 3;
+    place-items: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.checkout {
+    margin: 0.5rem 3rem;
+    padding: 0.5px 0;
+    text-align: center;
+    box-sizing: border-box;
+    white-space: normal;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1.25rem;
+    box-shadow: 0.1rem 0.1rem rgb(117, 107, 107);
+    cursor: pointer;
+}
+
+.cancellation {
+    margin: 0.2rem 2rem auto;
+    padding: 0.2rem 0;
+    text-align: center;
+    white-space: normal;
+    box-sizing: border-box;
+    color: darkslategrey;
+    cursor: pointer;
+}
+
+#checkout-btn {
+    color: white;
+}
+
+#cancel-btn {
+    color: darkslategrey;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width:375px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .frame {
+        max-width: 19rem;
+    }
+
+    .grid-container {
+        max-width: 75%;
+    }
+}
+
+.grid-left {
+    grid-area: 1;
+    grid-column-start: 1;
+    grid-template-columns: 2rem;
+    font-size: small;
+    align-self: center;
+    justify-self: center;
+}
+
+.nested {
+    display: grid;
+    grid-area: 1;
+    grid-column-start: 2;
+    font-size: small;
+    align-self: center;
+    justify-self: left;
+    
+}
+
+.grid-right {
+    grid-area: 1;
+    grid-column-start: 3;
+    place-items: center;
+    font-size: small;
+    align-self: center;
+    justify-self: center;
+}
+
+.checkout {
+    max-width: 80%;
+    margin: 0.5rem auto;
+    padding: 0.1px 0;
+    text-align: center;
+    box-sizing: border-box;
+    white-space: normal;
+    background-color: blue;
+    border-radius: 1.25rem;
+    box-shadow: 0.1rem 0.1rem rgb(117, 107, 107);
+    cursor: pointer;
+}
+
+.cancellation {
+    margin: 0.2rem 2rem auto;
+    padding: 1rem auto;
+    text-align: center;
+    white-space: normal;
+    box-sizing: border-box;
+    color: darkslategrey;
+    cursor: pointer;
+}
